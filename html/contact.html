@@ -5,7 +5,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact</title>
+  <link rel="shortcut icon" href="..\assets\favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="..\css\index.css">
+  <link rel="stylesheet" href="..\css\contact.css">
 </head>
 <body>
   <div class="navbar">
@@ -35,7 +37,36 @@
   </div>
   <div class="content">
     <h1>Contact</h1>
-    If you have a business inquiry or any questions, please email me at <a href="mailto:dt425@cornell.edu" class="email">dt425@cornell.edu</a>, send an email to <a href="https://linkedin.com/in/dylan-tom" target="_blank">my LinkedIn</a>, or feel free to use the contact form below. 
+    If you have a business inquiry or any questions, please email me at <a href="mailto:dt425@cornell.edu" class="email">dt425@cornell.edu</a>, send a message to <a href="https://linkedin.com/in/dylan-tom" target="_blank" class="inline">my LinkedIn</a>, or feel free to use the contact form below. 
+    <div class="form-container">
+      <form id="fcf-form-id" class="fcf-form-class" method="post" action="..\php\contact.php">
+      <div class="fcf-form-group">
+          <label for="Name" class="fcf-label">First Name</label>
+          <div class="fcf-input-group">
+              <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+          </div>
+      </div>
+      <div class="fcf-form-group">
+          <label for="Email" class="fcf-label">Email Address</label>
+          <div class="fcf-input-group">
+              <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+          </div>
+      <div class="fcf-form-group">
+          <label for="Subject" class="fcf-label">Subject</label>
+          <div class="fcf-input-group">
+              <textarea id="Subject" name="Subject" class="fcf-form-control" rows="1" required></textarea>
+          </div>
+      </div>
+      <div class="fcf-form-group">
+          <label for="Message" class="fcf-label">Message</label>
+          <div class="fcf-input-group">
+              <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+          </div>
+      </div>
+      <div class="fcf-form-group">
+          <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Submit</button>
+      </div>
+    </div>
   </div>
 </body>
 </html>

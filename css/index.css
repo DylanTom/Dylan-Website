@@ -9,7 +9,7 @@ body{
   overflow: hidden;
   margin:0;
   float:right;
-  position:static;
+  position:absolute;
 }
 
 .nav-item{
@@ -54,9 +54,20 @@ body{
 
 .content h1 {
   padding-top:100px;
-  padding-bottom:50px;
+  padding-bottom:25px;
+  margin: 0;
 }
 
 .content{
   text-align: center;
+  overflow: auto;
+  position: absolute;
+  top: 50px;
+  bottom: 50px;
+  left: 0px;
+  right: 0px;
+}
+
+.inline {
+  text-decoration: none;
 }
