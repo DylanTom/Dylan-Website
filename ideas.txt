@@ -1,0 +1,3 @@
+https://medium.com/weekly-webtips/simple-react-contact-form-without-back-end-9fa06eff52d9
+
+prettyURLs
