@@ -35,3 +35,19 @@ body{
   bottom: 0;
   border: 1px solid black;
 }
+
+.icons{
+  position:fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#icons {
+  margin: 10px;
+}
+.linkedin {
+  height: 64px;
+  width: 64px;
+}
